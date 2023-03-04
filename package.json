@@ -1,0 +1,16 @@
+{
+  "name": "my-own-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daniel Sandoval F",
+  "license": "ISC",
+  "dependencies": {
+    "amazon-connect-streams": "^2.4.5",
+    "bootstrap": "^5.3.0-alpha1"
+  }
+}

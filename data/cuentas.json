@@ -1,0 +1,2690 @@
+{
+    "data": {
+        "me": {
+            "name": "daniel.sandoval@in2clouds.cloud"
+        },
+        "boards": [
+            {
+                "name": "Cuentas",
+                "columns": [
+                    {
+                        "title": "Name",
+                        "id": "name",
+                        "type": "name"
+                    },
+                    {
+                        "title": "Número de Cuenta",
+                        "id": "text6",
+                        "type": "text"
+                    },
+                    {
+                        "title": "Deudor",
+                        "id": "connect_boards",
+                        "type": "board-relation"
+                    },
+                    {
+                        "title": "Identidad",
+                        "id": "mirror",
+                        "type": "lookup"
+                    },
+                    {
+                        "title": "Producto",
+                        "id": "dropdown7",
+                        "type": "dropdown"
+                    },
+                    {
+                        "title": "Mora",
+                        "id": "dropdown",
+                        "type": "dropdown"
+                    },
+                    {
+                        "title": "Días de Mora",
+                        "id": "numbers6",
+                        "type": "numeric"
+                    },
+                    {
+                        "title": "Estado",
+                        "id": "status",
+                        "type": "color"
+                    },
+                    {
+                        "title": "Fecha de Corte",
+                        "id": "date4",
+                        "type": "date"
+                    },
+                    {
+                        "title": "Saldo",
+                        "id": "numbers",
+                        "type": "numeric"
+                    },
+                    {
+                        "title": "Monto Mora",
+                        "id": "numbers2",
+                        "type": "numeric"
+                    },
+                    {
+                        "title": "Monto Ultimo  Pago",
+                        "id": "numbers23",
+                        "type": "numeric"
+                    },
+                    {
+                        "title": "Monto Pendiente",
+                        "id": "formula",
+                        "type": "formula"
+                    },
+                    {
+                        "title": "Fecha de Pago",
+                        "id": "date",
+                        "type": "date"
+                    },
+                    {
+                        "title": "Agente",
+                        "id": "person",
+                        "type": "multiple-person"
+                    }
+                ],
+                "groups": [
+                    {
+                        "title": "Premora",
+                        "id": "new_group3384"
+                    },
+                    {
+                        "title": "Morosos",
+                        "id": "topics"
+                    },
+                    {
+                        "title": "En Gestión",
+                        "id": "new_group41546"
+                    },
+                    {
+                        "title": "Promesas",
+                        "id": "new_group"
+                    },
+                    {
+                        "title": "Recuperados",
+                        "id": "group_title"
+                    }
+                ],
+                "items": [
+                    {
+                        "name": "Gabriela Romero - 2728292020",
+                        "group": {
+                            "id": "new_group3384"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"2728292020\"",
+                                "text": "2728292020"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4074755608}]}",
+                                "text": "Gabriela Romero"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4074755608"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[4]}",
+                                "text": "Crédito Hipotecario"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[1]}",
+                                "text": "Premora"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"0\"",
+                                "text": "0"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2023-03-02T16:58:16.072Z\"}",
+                                "text": "Premora"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2023-03-01\",\"changed_at\":\"2023-03-02T14:41:52.264Z\"}",
+                                "text": "2023-03-01"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"2630\"",
+                                "text": "2630"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"263\"",
+                                "text": "263"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "person",
+                                "value": "{\"changed_at\":\"2023-03-02T14:43:12.691Z\",\"personsAndTeams\":[{\"id\":40320340,\"kind\":\"person\"}]}",
+                                "text": "jorge.valdes@in2clouds.cloud"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Laura Caldas - 2786543289",
+                        "group": {
+                            "id": "new_group3384"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"2786543289\"",
+                                "text": "2786543289"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4074999103}]}",
+                                "text": "Laura Caldas"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4074999103"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[5]}",
+                                "text": "Crédito Automotriz"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[1]}",
+                                "text": "Premora"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"0\"",
+                                "text": "0"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2023-03-02T14:38:06.223Z\"}",
+                                "text": "Premora"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2023-03-01\",\"changed_at\":\"2023-03-02T16:46:09.757Z\"}",
+                                "text": "2023-03-01"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"1530\"",
+                                "text": "1530"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"153\"",
+                                "text": "153"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "person",
+                                "value": null,
+                                "text": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Andres Trujillo - 2637948578",
+                        "group": {
+                            "id": "new_group3384"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"2637948578\"",
+                                "text": "2637948578"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4075695990}]}",
+                                "text": "Andrés Trujillo"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4075695990"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[3]}",
+                                "text": "Amex"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[1]}",
+                                "text": "Premora"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"0\"",
+                                "text": "0"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2023-03-02T14:38:15.199Z\"}",
+                                "text": "Premora"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2023-03-01\",\"changed_at\":\"2023-03-02T14:41:22.802Z\"}",
+                                "text": "2023-03-01"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"3745\"",
+                                "text": "3745"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"374.5\"",
+                                "text": "374.5"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "person",
+                                "value": null,
+                                "text": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Margarita Osorio - 2847503826",
+                        "group": {
+                            "id": "new_group3384"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"2847503826\"",
+                                "text": "2847503826"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4075812182}]}",
+                                "text": "Margarita Osorio"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4075812182"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[3]}",
+                                "text": "Amex"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[1]}",
+                                "text": "Premora"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"0\"",
+                                "text": "0"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2023-03-02T14:38:18.658Z\"}",
+                                "text": "Premora"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2023-03-01\",\"changed_at\":\"2023-03-02T14:41:32.537Z\"}",
+                                "text": "2023-03-01"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"1875\"",
+                                "text": "1875"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"187.5\"",
+                                "text": "187.5"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "person",
+                                "value": null,
+                                "text": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Marcus Lemus - 2948574630",
+                        "group": {
+                            "id": "new_group3384"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"2948574630\"",
+                                "text": "2948574630"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4075898789}]}",
+                                "text": "Marcus Lemus"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4075898789"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[4]}",
+                                "text": "Crédito Hipotecario"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[1]}",
+                                "text": "Premora"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"0\"",
+                                "text": "0"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2023-03-02T14:38:25.543Z\"}",
+                                "text": "Premora"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2023-03-01\",\"changed_at\":\"2023-03-02T16:52:10.193Z\"}",
+                                "text": "2023-03-01"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"2783\"",
+                                "text": "2783"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"278.3\"",
+                                "text": "278.3"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "person",
+                                "value": null,
+                                "text": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Daniela Marquez - 2748584933",
+                        "group": {
+                            "id": "new_group3384"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"2748584933\"",
+                                "text": "2748584933"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4075914944}]}",
+                                "text": "Daniela Marquez"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4075914944"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[1]}",
+                                "text": "Visa"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[1]}",
+                                "text": "Premora"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"0\"",
+                                "text": "0"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":5,\"post_id\":null,\"changed_at\":\"2023-03-02T14:43:46.087Z\"}",
+                                "text": "Premora"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2023-03-01\",\"changed_at\":\"2023-03-02T16:56:16.700Z\"}",
+                                "text": "2023-03-01"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"1038\"",
+                                "text": "1038"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"103.8\"",
+                                "text": "103.8"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "person",
+                                "value": null,
+                                "text": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Jorge Valdés - 2839477483",
+                        "group": {
+                            "id": "topics"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"2839477483\"",
+                                "text": "2839477483"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4064101988}]}",
+                                "text": "Jorge Valdés"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4064101988"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[1]}",
+                                "text": "Visa"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[2]}",
+                                "text": "Mora 30"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"40\"",
+                                "text": "40"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2023-03-02T17:01:41.754Z\"}",
+                                "text": "Morosa"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2022-12-03\",\"changed_at\":\"2023-03-02T17:08:37.387Z\"}",
+                                "text": "2022-12-03"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"2778\"",
+                                "text": "2778"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"277.8\"",
+                                "text": "277.8"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "person",
+                                "value": null,
+                                "text": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Juan Gómez - 2039477584",
+                        "group": {
+                            "id": "topics"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"2039477584\"",
+                                "text": "2039477584"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4075532145}]}",
+                                "text": "Juan Gómez"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4075532145"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[2]}",
+                                "text": "Mastercard"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[2]}",
+                                "text": "Mora 30"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"35\"",
+                                "text": "35"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2023-03-02T17:06:30.553Z\"}",
+                                "text": "Morosa"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2023-01-24\",\"changed_at\":\"2023-03-02T20:37:46.561Z\"}",
+                                "text": "2023-01-24"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"3399\"",
+                                "text": "3399"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"339.9\"",
+                                "text": "339.9"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "person",
+                                "value": null,
+                                "text": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Martin Arango - 2849737329",
+                        "group": {
+                            "id": "topics"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"2849737329\"",
+                                "text": "2849737329"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4075568930}]}",
+                                "text": "Martín Arango"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4075568930"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[3]}",
+                                "text": "Amex"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[2]}",
+                                "text": "Mora 30"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"22\"",
+                                "text": "22"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2023-03-02T17:11:31.655Z\"}",
+                                "text": "Morosa"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2023-02-07\",\"changed_at\":\"2023-03-02T17:11:53.983Z\"}",
+                                "text": "2023-02-07"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"1976\"",
+                                "text": "1976"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"197.6\"",
+                                "text": "197.6"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "person",
+                                "value": null,
+                                "text": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Emiliano Sánchez - 2799394775",
+                        "group": {
+                            "id": "topics"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"2799394775\"",
+                                "text": "2799394775"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4075581035}]}",
+                                "text": "Emiliano Sánchez"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4075581035"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[4]}",
+                                "text": "Crédito Hipotecario"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[4]}",
+                                "text": "Mora 90"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"82\"",
+                                "text": "82"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2023-03-02T17:13:27.877Z\"}",
+                                "text": "Morosa"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2022-12-01\",\"changed_at\":\"2023-03-02T20:37:08.026Z\"}",
+                                "text": "2022-12-01"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"1945\"",
+                                "text": "1945"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"194.5\"",
+                                "text": "194.5"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "person",
+                                "value": null,
+                                "text": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Victoria Álvarez - 2838473992",
+                        "group": {
+                            "id": "topics"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"2838473992\"",
+                                "text": "2838473992"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4075605340}]}",
+                                "text": "Victoria Álvarez"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4075605340"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[2]}",
+                                "text": "Mastercard"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[2]}",
+                                "text": "Mora 30"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"50\"",
+                                "text": "50"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2023-03-02T17:14:08.210Z\"}",
+                                "text": "Morosa"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2023-01-10\",\"changed_at\":\"2023-03-02T17:29:38.068Z\"}",
+                                "text": "2023-01-10"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"5259\"",
+                                "text": "5259"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"525.9\"",
+                                "text": "525.9"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "person",
+                                "value": null,
+                                "text": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Camilo Diago - 2547382003",
+                        "group": {
+                            "id": "topics"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"2547382003\"",
+                                "text": "2547382003"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4075714488}]}",
+                                "text": "Camilo Diago"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4075714488"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[1]}",
+                                "text": "Visa"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[2]}",
+                                "text": "Mora 30"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"30\"",
+                                "text": "30"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2023-03-02T17:15:18.322Z\"}",
+                                "text": "Morosa"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2023-02-01\",\"changed_at\":\"2023-03-02T20:38:13.563Z\"}",
+                                "text": "2023-02-01"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"2536\"",
+                                "text": "2536"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"253.6\"",
+                                "text": "253.6"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "person",
+                                "value": null,
+                                "text": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Sofia Galeano - 2163849202",
+                        "group": {
+                            "id": "topics"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"2163849202\"",
+                                "text": "2163849202"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4075726949}]}",
+                                "text": "Sofia Galeano"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4075726949"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[1]}",
+                                "text": "Visa"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[2]}",
+                                "text": "Mora 30"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"32\"",
+                                "text": "32"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2023-03-02T17:15:20.876Z\"}",
+                                "text": "Morosa"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2023-01-27\",\"changed_at\":\"2023-03-02T20:38:41.938Z\"}",
+                                "text": "2023-01-27"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"3745\"",
+                                "text": "3745"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"374.5\"",
+                                "text": "374.5"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "person",
+                                "value": null,
+                                "text": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Lina Quintero - 2093847482",
+                        "group": {
+                            "id": "topics"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"2093847482\"",
+                                "text": "2093847482"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4075760374}]}",
+                                "text": "Lina Quintero"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4075760374"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[5]}",
+                                "text": "Crédito Automotriz"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[4]}",
+                                "text": "Mora 90"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"96\"",
+                                "text": "96"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2023-03-02T17:15:22.825Z\"}",
+                                "text": "Morosa"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2022-12-03\",\"changed_at\":\"2023-03-02T17:31:08.108Z\"}",
+                                "text": "2022-12-03"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"2647\"",
+                                "text": "2647"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"264.7\"",
+                                "text": "264.7"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "person",
+                                "value": null,
+                                "text": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Carlos Muñóz - 2938475738",
+                        "group": {
+                            "id": "topics"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"2938475738\"",
+                                "text": "2938475738"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4075776085}]}",
+                                "text": "Carlos Muñóz"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4075776085"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[1]}",
+                                "text": "Visa"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[2]}",
+                                "text": "Mora 30"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"53\"",
+                                "text": "53"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2023-03-02T17:15:24.926Z\"}",
+                                "text": "Morosa"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2023-01-07\",\"changed_at\":\"2023-03-02T17:32:01.204Z\"}",
+                                "text": "2023-01-07"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"3425\"",
+                                "text": "3425"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"342.5\"",
+                                "text": "342.5"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "person",
+                                "value": null,
+                                "text": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Ricardo Torres - 2847738393",
+                        "group": {
+                            "id": "topics"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"2847738393\"",
+                                "text": "2847738393"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4075821896}]}",
+                                "text": "Ricardo Torres"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4075821896"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[3]}",
+                                "text": "Amex"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[2]}",
+                                "text": "Mora 30"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"42\"",
+                                "text": "42"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2023-03-02T17:15:27.074Z\"}",
+                                "text": "Morosa"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2023-01-18\",\"changed_at\":\"2023-03-02T17:32:24.107Z\"}",
+                                "text": "2023-01-18"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"2635\"",
+                                "text": "2635"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"263.5\"",
+                                "text": "263.5"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "person",
+                                "value": null,
+                                "text": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Daniela Marquez - 2847738291",
+                        "group": {
+                            "id": "topics"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"2847738291\"",
+                                "text": "2847738291"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4075914944}]}",
+                                "text": "Daniela Marquez"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4075914944"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[3]}",
+                                "text": "Amex"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[2]}",
+                                "text": "Mora 30"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"39\"",
+                                "text": "39"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2023-03-02T17:18:54.783Z\"}",
+                                "text": "Morosa"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2023-01-21\",\"changed_at\":\"2023-03-02T17:33:46.002Z\"}",
+                                "text": "2023-01-21"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"1570\"",
+                                "text": "1570"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"157\"",
+                                "text": "157"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "person",
+                                "value": null,
+                                "text": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Laura Caldas - 2547638293",
+                        "group": {
+                            "id": "topics"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"2547638293\"",
+                                "text": "2547638293"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4074999103}]}",
+                                "text": "Laura Caldas"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4074999103"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[2]}",
+                                "text": "Mastercard"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[2]}",
+                                "text": "Mora 30"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"32\"",
+                                "text": "32"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2023-03-02T17:19:55.177Z\"}",
+                                "text": "Morosa"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2023-01-24\",\"changed_at\":\"2023-03-02T20:39:27.603Z\"}",
+                                "text": "2023-01-24"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"2300\"",
+                                "text": "2300"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"230\"",
+                                "text": "230"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "person",
+                                "value": null,
+                                "text": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Juan Diego Angulo - 378027455",
+                        "group": {
+                            "id": "topics"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"378027455\"",
+                                "text": "378027455"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4064025682}]}",
+                                "text": "Juan Diego Angulo"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4064025682"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[6]}",
+                                "text": "Crédito Consumo"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[2]}",
+                                "text": "Mora 30"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"35\"",
+                                "text": "35"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":2,\"post_id\":null,\"changed_at\":\"2023-03-02T17:34:35.479Z\"}",
+                                "text": "Morosa"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2023-03-02\",\"icon\":null,\"changed_at\":\"2023-03-01T00:15:22.107Z\"}",
+                                "text": "2023-03-02"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"4800\"",
+                                "text": "4800"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"480\"",
+                                "text": "480"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "person",
+                                "value": null,
+                                "text": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Marcus Lemus - 2637483939",
+                        "group": {
+                            "id": "new_group41546"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"2637483939\"",
+                                "text": "2637483939"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4075898789}]}",
+                                "text": "Marcus Lemus"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4075898789"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[5]}",
+                                "text": "Crédito Automotriz"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[2]}",
+                                "text": "Mora 30"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"30\"",
+                                "text": "30"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":3,\"post_id\":null,\"changed_at\":\"2023-03-02T20:45:26.501Z\"}",
+                                "text": "En Gestión"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2023-02-02\",\"changed_at\":\"2023-03-02T20:46:32.606Z\"}",
+                                "text": "2023-02-02"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"1200\"",
+                                "text": "1200"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"120\"",
+                                "text": "120"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "person",
+                                "value": null,
+                                "text": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Daniel Sandoval - 273972401",
+                        "group": {
+                            "id": "new_group"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"273972401\"",
+                                "text": "273972401"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4064025747}]}",
+                                "text": "Daniel Sandoval"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4064025747"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[2]}",
+                                "text": "Mastercard"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[3]}",
+                                "text": "Mora 60"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"40\"",
+                                "text": "40"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2023-03-02T17:38:29.900Z\"}",
+                                "text": "Promesa"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2023-01-20\",\"icon\":null,\"changed_at\":\"2023-03-02T17:42:47.395Z\"}",
+                                "text": "2023-01-20"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"4500\"",
+                                "text": "4500"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"450\"",
+                                "text": "450"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "person",
+                                "value": null,
+                                "text": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Jimmy Duarte - 347383340",
+                        "group": {
+                            "id": "new_group"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"347383340\"",
+                                "text": "347383340"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4064025736}]}",
+                                "text": "Jimmy Duarte"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4064025736"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[3]}",
+                                "text": "Amex"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[2]}",
+                                "text": "Mora 30"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"15\"",
+                                "text": "15"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2023-03-02T17:38:04.886Z\"}",
+                                "text": "Promesa"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2023-02-28\",\"icon\":null,\"changed_at\":\"2023-03-01T00:15:21.872Z\"}",
+                                "text": "2023-02-28"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"8500\"",
+                                "text": "8500"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"850\"",
+                                "text": "850"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "person",
+                                "value": null,
+                                "text": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Cesar Cruz - 2748928384",
+                        "group": {
+                            "id": "new_group"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"2748928384\"",
+                                "text": "2748928384"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4075620358}]}",
+                                "text": "Cesar Cruz"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4075620358"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[2]}",
+                                "text": "Mastercard"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[2]}",
+                                "text": "Mora 30"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"21\"",
+                                "text": "21"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2023-03-02T17:38:48.577Z\"}",
+                                "text": "Promesa"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2023-02-08\",\"changed_at\":\"2023-03-02T17:44:17.603Z\"}",
+                                "text": "2023-02-08"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"1836\"",
+                                "text": "1836"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"183.6\"",
+                                "text": "183.6"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "person",
+                                "value": null,
+                                "text": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Mauricio Domínguez - 2739284574",
+                        "group": {
+                            "id": "new_group"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"2739284574\"",
+                                "text": "2739284574"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4075683958}]}",
+                                "text": "Mauricio Domínguez"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4075683958"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[1]}",
+                                "text": "Visa"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[4]}",
+                                "text": "Mora 90"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"65\"",
+                                "text": "65"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2023-03-02T17:39:07.634Z\"}",
+                                "text": "Promesa"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2022-12-26\",\"changed_at\":\"2023-03-02T17:44:47.376Z\"}",
+                                "text": "2022-12-26"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"2844\"",
+                                "text": "2844"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"284.4\"",
+                                "text": "284.4"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "person",
+                                "value": null,
+                                "text": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Angela Mendoza - 2844728383",
+                        "group": {
+                            "id": "new_group"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"2844728383\"",
+                                "text": "2844728383"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4075843408}]}",
+                                "text": "Angela Mendoza"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4075843408"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[6]}",
+                                "text": "Crédito Consumo"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[3]}",
+                                "text": "Mora 60"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"45\"",
+                                "text": "45"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2023-03-02T17:39:20.510Z\"}",
+                                "text": "Promesa"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2023-01-15\",\"changed_at\":\"2023-03-02T17:45:09.991Z\"}",
+                                "text": "2023-01-15"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"3647\"",
+                                "text": "3647"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"364.7\"",
+                                "text": "364.7"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "person",
+                                "value": null,
+                                "text": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Francisco Zamora - 2183746639",
+                        "group": {
+                            "id": "new_group"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"2183746639\"",
+                                "text": "2183746639"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4064025731}]}",
+                                "text": "Francisco Zamora"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4064025731"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[3]}",
+                                "text": "Amex"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[3]}",
+                                "text": "Mora 60"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"60\"",
+                                "text": "60"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":0,\"post_id\":null,\"changed_at\":\"2023-03-02T20:51:37.093Z\"}",
+                                "text": "Promesa"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2023-01-02\",\"changed_at\":\"2023-03-02T20:53:58.745Z\"}",
+                                "text": "2023-01-02"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"2200\"",
+                                "text": "2200"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"220\"",
+                                "text": "220"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "person",
+                                "value": null,
+                                "text": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Jorge Valdés -  4063996221",
+                        "group": {
+                            "id": "group_title"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"4063996221\"",
+                                "text": "4063996221"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4064101988}]}",
+                                "text": "Jorge Valdés"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4064101988"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[3]}",
+                                "text": "Amex"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[7]}",
+                                "text": "Normal"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"0\"",
+                                "text": "0"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2023-03-01T04:16:08.825Z\"}",
+                                "text": "Recuperada"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2023-03-01\",\"icon\":null,\"changed_at\":\"2023-03-02T20:50:56.278Z\"}",
+                                "text": "2023-03-01"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"1536.45\"",
+                                "text": "1536.45"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"153.64\"",
+                                "text": "153.64"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": "\"153.64\"",
+                                "text": "153.64"
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": "{\"date\":\"2023-02-28\",\"changed_at\":\"2023-03-01T04:07:01.805Z\"}",
+                                "text": "2023-02-28"
+                            },
+                            {
+                                "id": "person",
+                                "value": "{\"personsAndTeams\":[{\"id\":40320221,\"kind\":\"person\"}]}",
+                                "text": "Demo In2recovery"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Eduardo Sudasassi - 387398303",
+                        "group": {
+                            "id": "group_title"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"387398303\"",
+                                "text": "387398303"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4064025724}]}",
+                                "text": "Eduardo Sudasassi"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4064025724"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[5]}",
+                                "text": "Crédito Automotriz"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[7]}",
+                                "text": "Normal"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"0\"",
+                                "text": "0"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2023-03-02T17:34:16.049Z\"}",
+                                "text": "Recuperada"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2023-03-01\",\"icon\":null,\"changed_at\":\"2023-03-02T20:51:00.169Z\"}",
+                                "text": "2023-03-01"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"2292.09\"",
+                                "text": "2292.09"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"229.2\"",
+                                "text": "229.2"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": "\"229.2\"",
+                                "text": "229.2"
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": "{\"date\":\"2023-03-01\",\"changed_at\":\"2023-03-02T20:48:00.283Z\"}",
+                                "text": "2023-03-01"
+                            },
+                            {
+                                "id": "person",
+                                "value": "{\"changed_at\":\"2023-03-02T20:48:38.293Z\",\"personsAndTeams\":[{\"id\":40320221,\"kind\":\"person\"}]}",
+                                "text": "Demo In2recovery"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Francisco Zamora - 2837466383",
+                        "group": {
+                            "id": "group_title"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"2837466383\"",
+                                "text": "2837466383"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4064025731}]}",
+                                "text": "Francisco Zamora"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4064025731"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[6]}",
+                                "text": "Crédito Consumo"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[7]}",
+                                "text": "Normal"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"0\"",
+                                "text": "0"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2023-03-02T17:49:40.548Z\"}",
+                                "text": "Recuperada"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2023-03-01\",\"changed_at\":\"2023-03-02T20:51:02.476Z\"}",
+                                "text": "2023-03-01"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"2728\"",
+                                "text": "2728"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"272\"",
+                                "text": "272"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": "\"272\"",
+                                "text": "272"
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": "{\"date\":\"2023-02-24\",\"changed_at\":\"2023-03-02T20:48:06.150Z\"}",
+                                "text": "2023-02-24"
+                            },
+                            {
+                                "id": "person",
+                                "value": "{\"changed_at\":\"2023-03-02T20:48:40.503Z\",\"personsAndTeams\":[{\"id\":40320221,\"kind\":\"person\"}]}",
+                                "text": "Demo In2recovery"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Bianca Fajardo - 2653672833",
+                        "group": {
+                            "id": "group_title"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"2653672833\"",
+                                "text": "2653672833"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4075629264}]}",
+                                "text": "Bianca Fajardo"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4075629264"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[6]}",
+                                "text": "Crédito Consumo"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[7]}",
+                                "text": "Normal"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"0\"",
+                                "text": "0"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2023-03-02T17:50:00.244Z\"}",
+                                "text": "Recuperada"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2023-03-01\",\"changed_at\":\"2023-03-02T20:51:04.614Z\"}",
+                                "text": "2023-03-01"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"6720\"",
+                                "text": "6720"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"672\"",
+                                "text": "672"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": "\"672\"",
+                                "text": "672"
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": "{\"date\":\"2023-03-02\",\"changed_at\":\"2023-03-02T20:48:09.561Z\"}",
+                                "text": "2023-03-02"
+                            },
+                            {
+                                "id": "person",
+                                "value": "{\"changed_at\":\"2023-03-02T20:48:42.443Z\",\"personsAndTeams\":[{\"id\":40320221,\"kind\":\"person\"}]}",
+                                "text": "Demo In2recovery"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Felipe Rodriguez - 2938476272",
+                        "group": {
+                            "id": "group_title"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"2938476272\"",
+                                "text": "2938476272"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4075647217}]}",
+                                "text": "Felipe Rodríguez"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4075647217"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[6]}",
+                                "text": "Crédito Consumo"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[7]}",
+                                "text": "Normal"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"0\"",
+                                "text": "0"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2023-03-02T17:50:21.410Z\"}",
+                                "text": "Recuperada"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2023-03-01\",\"changed_at\":\"2023-03-02T20:51:07.475Z\"}",
+                                "text": "2023-03-01"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"1287\"",
+                                "text": "1287"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"128\"",
+                                "text": "128"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": "\"128\"",
+                                "text": "128"
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": "{\"date\":\"2023-02-27\",\"changed_at\":\"2023-03-02T20:48:14.669Z\"}",
+                                "text": "2023-02-27"
+                            },
+                            {
+                                "id": "person",
+                                "value": "{\"changed_at\":\"2023-03-02T20:48:44.999Z\",\"personsAndTeams\":[{\"id\":40320221,\"kind\":\"person\"}]}",
+                                "text": "Demo In2recovery"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Alejandro Angarita - 2193873627",
+                        "group": {
+                            "id": "group_title"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"2193873627\"",
+                                "text": "2193873627"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4075672330}]}",
+                                "text": "Alejandro Angarita"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4075672330"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[6]}",
+                                "text": "Crédito Consumo"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[7]}",
+                                "text": "Normal"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"0\"",
+                                "text": "0"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2023-03-02T17:50:39.954Z\"}",
+                                "text": "Recuperada"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2023-03-01\",\"changed_at\":\"2023-03-02T20:51:09.832Z\"}",
+                                "text": "2023-03-01"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"4367.3\"",
+                                "text": "4367.3"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"436\"",
+                                "text": "436"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": "\"436\"",
+                                "text": "436"
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": "{\"date\":\"2023-02-22\",\"changed_at\":\"2023-03-02T20:48:22.077Z\"}",
+                                "text": "2023-02-22"
+                            },
+                            {
+                                "id": "person",
+                                "value": "{\"changed_at\":\"2023-03-02T20:48:47.054Z\",\"personsAndTeams\":[{\"id\":40320221,\"kind\":\"person\"}]}",
+                                "text": "Demo In2recovery"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Valentina Bayona - 2417383920",
+                        "group": {
+                            "id": "group_title"
+                        },
+                        "column_values": [
+                            {
+                                "id": "text6",
+                                "value": "\"2417383920\"",
+                                "text": "2417383920"
+                            },
+                            {
+                                "id": "connect_boards",
+                                "value": "{\"linkedPulseIds\":[{\"linkedPulseId\":4075877855}]}",
+                                "text": "Valentina Bayona"
+                            },
+                            {
+                                "id": "mirror",
+                                "value": null,
+                                "text": "4075877855"
+                            },
+                            {
+                                "id": "dropdown7",
+                                "value": "{\"ids\":[4]}",
+                                "text": "Crédito Hipotecario"
+                            },
+                            {
+                                "id": "dropdown",
+                                "value": "{\"ids\":[7]}",
+                                "text": "Normal"
+                            },
+                            {
+                                "id": "numbers6",
+                                "value": "\"0\"",
+                                "text": "0"
+                            },
+                            {
+                                "id": "status",
+                                "value": "{\"index\":1,\"post_id\":null,\"changed_at\":\"2023-03-02T17:50:55.489Z\"}",
+                                "text": "Recuperada"
+                            },
+                            {
+                                "id": "date4",
+                                "value": "{\"date\":\"2023-03-01\",\"changed_at\":\"2023-03-02T20:51:11.850Z\"}",
+                                "text": "2023-03-01"
+                            },
+                            {
+                                "id": "numbers",
+                                "value": "\"2739.88\"",
+                                "text": "2739.88"
+                            },
+                            {
+                                "id": "numbers2",
+                                "value": "\"273\"",
+                                "text": "273"
+                            },
+                            {
+                                "id": "numbers23",
+                                "value": "\"273\"",
+                                "text": "273"
+                            },
+                            {
+                                "id": "formula",
+                                "value": null,
+                                "text": ""
+                            },
+                            {
+                                "id": "date",
+                                "value": "{\"date\":\"2023-02-26\",\"changed_at\":\"2023-03-02T20:48:27.645Z\"}",
+                                "text": "2023-02-26"
+                            },
+                            {
+                                "id": "person",
+                                "value": "{\"changed_at\":\"2023-03-02T20:48:49.200Z\",\"personsAndTeams\":[{\"id\":40320221,\"kind\":\"person\"}]}",
+                                "text": "Demo In2recovery"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "account_id": 15629056
+}
+
+  

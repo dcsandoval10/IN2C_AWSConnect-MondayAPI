@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script type="text/javascript" src="./connect-streams.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./styles/styles.css" />
+</head>
+<!-- Add the call to init() as an onload so it will only run once the page is loaded -->
+
+<body onload="init()">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div id="container-div">
+                    <!-- ACA ENTRA EL CCP -->
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div id="tableDeudores">
+                    <h1>hola</h1>
+                    <h1>nueva data</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div id="tableCuentas">
+
+                </div>
+            </div>
+            <div class="col-6">
+                <h1>Notas de la llamada</h1>
+                <form action="" id="sendMonday">
+                    
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var containerDiv = document.getElementById("container-div");
+        var instanceURL =
+            "https://in2clouds-latam-domain.awsapps.com/connect/ccp-v2/";
+
+        // initialize the streams api
+        function init() {
+            // let contacto = connect.contact()
+            // console.log(contacto)
+
+            // initialize the ccp
+            connect.core.initCCP(containerDiv, {
+                ccpUrl: "https://in2clouds-latam.my.connect.aws/ccp-v2", // REQUIRED
+                loginPopup: true, // optional, defaults to `true`
+                loginPopupAutoClose: true, // optional, defaults to `false`
+                loginOptions: {
+                    // optional, if provided opens login in new window
+                    autoClose: true, // optional, defaults to `false`
+                    height: 600, // optional, defaults to 578
+                    width: 400, // optional, defaults to 433
+                    top: 0, // optional, defaults to 0
+                    left: 0, // optional, defaults to 0
+                },
+                region: "us-east-1", // REQUIRED for `CHAT`, optional otherwise
+                softphone: {
+                    // optional, defaults below apply if not provided
+                    allowFramedSoftphone: true, // optional, defaults to false
+                    disableRingtone: false, // optional, defaults to false
+                    ringtoneUrl: "./ringtone.mp3", // optional, defaults to CCP’s default ringtone if a falsy value is set
+                },
+                pageOptions: {
+                    //optional
+                    enableAudioDeviceSettings: false, //optional, defaults to 'false'
+                    enablePhoneTypeSettings: true, //optional, defaults to 'true'
+                },
+                shouldAddNamespaceToLogs: false, //optional, defaults to 'false'
+                ccpAckTimeout: 5000, //optional, defaults to 3000 (ms)
+                ccpSynTimeout: 3000, //optional, defaults to 1000 (ms)
+                ccpLoadTimeout: 10000, //optional, defaults to 5000 (ms)
+            });
+            connect.contact(function (contact) {
+                console.log("INICIE");
+
+                contact.onIncoming(function (contact) { });
+
+                contact.onRefresh(function (contact) { });
+
+                contact.onAccepted(function (contact) { });
+
+                contact.onEnded(function () { });
+
+                contact.onConnected(function () {
+                    console.log(`onConnected(${contact.getContactId()})`);
+                    var attributeMap = contact.getAttributes();
+                    console.log(
+                        "EL MAPA DE ATRIBUTOS ES" + JSON.stringify(attributeMap)
+                    );
+
+                    searchMonday(attributeMap);
+
+                    // var name = JSON.stringify(attributeMap["firstName"]["value"]);
+                    // var phone = JSON.stringify(attributeMap["phoneNumber"]["value"]);
+                    // var account = JSON.stringify(attributeMap["accountNumber"]["value"]);
+                    // console.log(name);
+                    // console.log(phone);
+                    // console.log(account);
+                    // window.alert("Customer's name: " + name + "\nCustomer's phone #: " + phone + "\nCustomer's account #: " + account);
+                });
+            });
+        }
+
+        async function searchMonday(value) {
+            let phone = value.numero.value;
+            let string = JSON.stringify(phone);
+
+            alert("Este es el valor" + string);
+
+            let query =
+                'query { items_by_column_values (board_id: 4064025665, column_id: "phone", column_value: "573059473346") { id name column_values {title id text description} } }';
+
+            let datosM;
+            const mondayData = await fetch("https://api.monday.com/v2", {
+                method: "post",
+                headers: {
+                    "Content-Type": "application/json",
+                    Authorization:
+                        "eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOjI0MTI2MTUyNCwidWlkIjo0MDMyMDM0MSwiaWFkIjoiMjAyMy0wMy0wM1QwMTo1MDo0NC4wOTdaIiwicGVyIjoibWU6d3JpdGUiLCJhY3RpZCI6MTU2MjkwNTYsInJnbiI6InVzZTEifQ.RZFifS1K8UzEiwF2Feq4YDrfE6zmZn_SQpJPNOc7ecY",
+                },
+                body: JSON.stringify({
+                    query: query,
+                }),
+            })
+                .then((res) => res.json())
+                .then((data) => {
+                    obj = data;
+                })
+
+                .then(() => {
+                    datosM = obj;
+
+                    console.log(datosM);
+                });
+            // .then(res => console.log("DATOS MONDAY" + JSON.stringify(res, null, 2)));
+
+            console.log("ESTA ES LA VARIABLE" + JSON.stringify(datosM));
+            buildDeudores(datosM);
+            searchMondayCuentas(datosM)
+
+        }
+        async function searchMondayCuentas(datos) {
+            identidad = datos.data.items_by_column_values[0].column_values[0].text
+
+            console.log("ESTA ES LA IDENTIDAD" + identidad)
+
+            
+            let query =
+            `query { items_by_column_values (board_id: 4063996196, column_id: "texto", column_value: "${identidad}") { id name column_values {title id text description} } }`;
+
+            let datosCuenta;
+            const mondayData = await fetch("https://api.monday.com/v2", {
+                method: "post",
+                headers: {
+                    "Content-Type": "application/json",
+                    Authorization:
+                        "eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOjI0MTI2MTUyNCwidWlkIjo0MDMyMDM0MSwiaWFkIjoiMjAyMy0wMy0wM1QwMTo1MDo0NC4wOTdaIiwicGVyIjoibWU6d3JpdGUiLCJhY3RpZCI6MTU2MjkwNTYsInJnbiI6InVzZTEifQ.RZFifS1K8UzEiwF2Feq4YDrfE6zmZn_SQpJPNOc7ecY",
+                },
+                body: JSON.stringify({
+                    query: query,
+                }),
+            })
+                .then((res) => res.json())
+                .then((data) => {
+                    obj = data;
+                })
+
+                .then(() => {
+                    datosCuenta = obj;
+
+                    console.log(datosCuenta);
+                });
+                buildCuenta(datosCuenta)
+
+        }
+
+        function buildDeudores(res) {
+            console.log("ESTOS SON LOS DATOS QUE VIENEN DEL RES" + res);
+
+            let title = res.data.items_by_column_values[0].column_values[0].title;
+            let titleValue = res.data.items_by_column_values[0].column_values[0].text;
+
+            let tipo = res.data.items_by_column_values[0].column_values[1].title;
+            let tipoValue = res.data.items_by_column_values[0].column_values[1].text;
+
+            let name = res.data.items_by_column_values[0].name;
+
+            let email = res.data.items_by_column_values[0].column_values[5].title;
+            let emailValue = res.data.items_by_column_values[0].column_values[5].text;
+
+            let cel = res.data.items_by_column_values[0].column_values[6].title;
+            let celValue = res.data.items_by_column_values[0].column_values[6].text;
+
+            let casa = res.data.items_by_column_values[0].column_values[7].title;
+            let casaValue = res.data.items_by_column_values[0].column_values[7].text;
+
+            let trabajo = res.data.items_by_column_values[0].column_values[8].title;
+            let TrabajoValue = res.data.items_by_column_values[0].column_values[8].text;
+
+            let newArray = res.data.items_by_column_values[0].column_values
+            console.log(newArray)
+
+            let target = document.getElementById("tableDeudores");
+
+            target.innerHTML = `
+            <h1>DEUDORES</h1>      
+            
+            <table>
+                <tr>
+                    <th>Nombre Cliente:</th>
+                    <th>${name}</th>
+                    
+                </tr>
+                <tr>
+                    <th>${title}:</th>
+                    <th>${titleValue}</th>
+                    
+                </tr>
+                <tr>
+                    <th>${tipo}:</th>
+                    <th>${tipoValue}</th>
+                    
+                </tr>
+                <tr>
+                    <th>Informacion de contacto:</th>
+                    
+                </tr>
+
+                <tr>
+                    <th>${email}:</th>
+                    <th>${emailValue}</th>
+                    
+                </tr>
+                <tr>
+                    <th>${cel}:</th>
+                    <th>+${celValue}</th>
+                </tr>
+                <tr>
+                    <th>${casa}:</th>
+                    <th>+${casaValue}</th>
+                </tr>
+                <tr>
+                    <th>${trabajo}:</th>
+                    <th>+${TrabajoValue}</th>
+                </tr>
+                </table>
+            `;
+        }
+
+        function buildCuenta (res){
+            numcuenta = res.data.items_by_column_values[0].column_values[0].text
+
+            producto = res.data.items_by_column_values[0].column_values[4].text
+
+            diasMora = res.data.items_by_column_values[0].column_values[6].text
+
+            fechaCorte = res.data.items_by_column_values[0].column_values[8].text
+
+            montoMora = res.data.items_by_column_values[0].column_values[10].text
+
+            fechaPago = res.data.items_by_column_values[0].column_values[13].text
+            
+            let target = document.getElementById("tableCuentas");
+
+            target.innerHTML = `
+            <h1>CUENTAS</h1>      
+            
+            <table>
+                <tr>
+                    <th>Numero de cuenta:</th>
+                    <th>${numcuenta}</th>
+                    
+                </tr>
+                <tr>
+                    <th>Producto:</th>
+                    <th>${producto}</th>
+                    
+                </tr>
+                <tr>
+                    <th>Dias de mora:</th>
+                    <th>${diasMora}</th>
+                    
+                </tr>
+
+                <tr>
+                    <th>Monto de la mora:</th>
+                    <th>${montoMora}</th>
+                    
+                </tr>
+
+                <tr>
+                    <th>Fecha de corte:</th>
+                    <th>${fechaCorte}</th>
+                </tr>
+
+                <tr>
+                    <th>Fecha de pago:</th>
+                    <th>${fechaPago}</th>
+                </tr>
+               
+                </table>
+            `;
+        }
+    </script>
+</body>
+
+</html>
