@@ -23,16 +23,22 @@
 <body onload="init()">
     <div class="container">
         <div class="row">
-            <div class="col-6">
+            <div class="col-4">
                 <div id="container-div">
                     <!-- ACA ENTRA EL CCP -->
                 </div>
             </div>
 
-            <div class="col-6">
+            <div class="col-4">
                 <div id="tableDeudores">
                     <h1>hola</h1>
                     <h1>nueva data</h1>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div id="tableCuentas">
+
                 </div>
             </div>
         </div>
@@ -40,15 +46,41 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-6">
-                <div id="tableCuentas">
 
-                </div>
-            </div>
             <div class="col-6">
                 <h1>Notas de la llamada</h1>
                 <form action="" id="sendMonday">
-                    
+
+                    <div class="form-group">
+                        <label for="notas">Notas de la llamada:</label>
+                        <textarea class="form-control" id="notas" rows="3"></textarea>
+                    </div>
+
+                    <div class="form-control form-control-lg">
+
+
+                        <select class="form-control" id="select">
+                            <option>Seleccione una opcion</option>
+                            <option>Dejo mensaje</option>
+                            <option>Email enviado</option>
+                            <option>Fuera del país</option>
+                            <option>No contesta</option>
+                            <option>No localizado</option>
+                            <option>Numero equivocado</option>
+                            <option>Programar llamada</option>
+                            <option>Promesa de pago</option>
+                            <option>SMS Enviado</option>
+                        </select>
+                    </div>
+
+                    <label for="date">Start date:</label>
+                    <input type="date" id="date" name="start-date">
+
+                    <label for="time">Enter a time:</label>
+                    <input type="time" id="time" name="time">
+                    <hr>
+
+                    <button type="submit">Terminar contacto</button>
 
                 </form>
             </div>
@@ -126,14 +158,17 @@
             });
         }
 
+        var identidad
         async function searchMonday(value) {
             let phone = value.numero.value;
             let string = JSON.stringify(phone);
+            string = string.substring(2);
+            string = string.substring(0, string.length - 1);
 
-            alert("Este es el valor" + string);
+            console.log("Este es el TELEFONO QUE MANDA CONNECT" + string);
 
             let query =
-                'query { items_by_column_values (board_id: 4064025665, column_id: "phone", column_value: "573059473346") { id name column_values {title id text description} } }';
+                `query { items_by_column_values (board_id: 4064025665, column_id: "phone", column_value: "${string}") { id name column_values {title id text description} } }`;
 
             let datosM;
             const mondayData = await fetch("https://api.monday.com/v2", {
@@ -165,13 +200,13 @@
 
         }
         async function searchMondayCuentas(datos) {
-            identidad = datos.data.items_by_column_values[0].column_values[0].text
+             identidad = datos.data.items_by_column_values[0].column_values[0].text
 
             console.log("ESTA ES LA IDENTIDAD" + identidad)
 
-            
+
             let query =
-            `query { items_by_column_values (board_id: 4063996196, column_id: "texto", column_value: "${identidad}") { id name column_values {title id text description} } }`;
+                `query { items_by_column_values (board_id: 4063996196, column_id: "texto", column_value: "${identidad}") { id name column_values {title id text description} } }`;
 
             let datosCuenta;
             const mondayData = await fetch("https://api.monday.com/v2", {
@@ -195,7 +230,7 @@
 
                     console.log(datosCuenta);
                 });
-                buildCuenta(datosCuenta)
+            buildCuenta(datosCuenta)
 
         }
 
@@ -272,7 +307,7 @@
             `;
         }
 
-        function buildCuenta (res){
+        function buildCuenta(res) {
             numcuenta = res.data.items_by_column_values[0].column_values[0].text
 
             producto = res.data.items_by_column_values[0].column_values[4].text
@@ -284,8 +319,10 @@
             montoMora = res.data.items_by_column_values[0].column_values[10].text
 
             fechaPago = res.data.items_by_column_values[0].column_values[13].text
-            
+
             let target = document.getElementById("tableCuentas");
+
+
 
             target.innerHTML = `
             <h1>CUENTAS</h1>      
@@ -326,6 +363,154 @@
                 </table>
             `;
         }
+
+
+
+        // ESTO SEGURAMENTE LO PUEDO MANDAR A UN JAVASCRIPT APARTE PERO AUN NO TENGO TIEMPO
+
+        const form = document.getElementById('sendMonday')
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault()
+
+            let notasLlamada = document.getElementById('notas').value
+            let seleccion = document.getElementById('select').value
+            let date = document.getElementById('date').value
+            let time = document.getElementById('time').value
+
+            console.log(typeof (time))
+
+            // PREPARA LA CASILLA DE DATE 
+
+            // let horaFormatoMonday = queHoraEs()
+
+            // console.log("Lo que esta en las casillas es " + notasLlamada + "y" + seleccion + "y" + date)
+
+            // let borrar = `{\"date3\" : {\"date\":\"${date}\",\"time\":\"14:00:00\",\"changed_at\":\"${horaFormatoMonday}\"}}`
+
+            // let borrar2 = JSON.stringify(borrar)
+
+            let  identifier = await searchUserToEdit()
+            console.log("EL IDENTIFICADOR ES" + identifier)
+            
+            let query =
+                `
+                mutation {
+                change_simple_column_value(item_id: ${identifier}, board_id: 4064000118, column_id: "comentarios6", value: "${notasLlamada}") {
+                     id
+                    }
+                }
+                `;
+
+
+            const mondayData = fetch("https://api.monday.com/v2", {
+                method: "post",
+                headers: {
+                    "Content-Type": "application/json",
+                    Authorization:
+                        "eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOjI0MTI2MTUyNCwidWlkIjo0MDMyMDM0MSwiaWFkIjoiMjAyMy0wMy0wM1QwMTo1MDo0NC4wOTdaIiwicGVyIjoibWU6d3JpdGUiLCJhY3RpZCI6MTU2MjkwNTYsInJnbiI6InVzZTEifQ.RZFifS1K8UzEiwF2Feq4YDrfE6zmZn_SQpJPNOc7ecY",
+                },
+                body: JSON.stringify({
+                    query: query,
+                }),
+            })
+
+
+
+            // REVISAR DESPUES POR QUE NO FUNCIONA
+
+            // let query2 =
+            //     `mutation {change_multiple_column_values(item_id: 4078461498, board_id:  4064000118, column_values: "{\\"date3\\" : {}}") {id}}`;
+
+            // let queryMod = JSON.stringify(query2)
+            // console.log(query2)
+
+            // const mondayData2 = fetch("https://api.monday.com/v2", {
+            //     method: "post",
+            //     headers: {
+            //         "Content-Type": "application/json",
+            //         Authorization:
+            //             "eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOjI0MTI2MTUyNCwidWlkIjo0MDMyMDM0MSwiaWFkIjoiMjAyMy0wMy0wM1QwMTo1MDo0NC4wOTdaIiwicGVyIjoibWU6d3JpdGUiLCJhY3RpZCI6MTU2MjkwNTYsInJnbiI6InVzZTEifQ.RZFifS1K8UzEiwF2Feq4YDrfE6zmZn_SQpJPNOc7ecY",
+            //     },
+            //     body:{
+            //         query: query2,
+            //     },
+            // })
+
+
+            const mondayData2 = fetch("https://api.monday.com/v2", {
+                method: 'post',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': 'eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOjI0MTI2MTUyNCwidWlkIjo0MDMyMDM0MSwiaWFkIjoiMjAyMy0wMy0wM1QwMTo1MDo0NC4wOTdaIiwicGVyIjoibWU6d3JpdGUiLCJhY3RpZCI6MTU2MjkwNTYsInJnbiI6InVzZTEifQ.RZFifS1K8UzEiwF2Feq4YDrfE6zmZn_SQpJPNOc7ecY'
+                },
+                body: JSON.stringify({
+                    query: "mutation ($myBoardId:Int!, $myItemId:Int!, $myColumnValues:JSON!) { change_multiple_column_values(item_id:$myItemId, board_id:$myBoardId, column_values: $myColumnValues) { id } }",
+                    variables: JSON.stringify({
+                        myBoardId: 4064000118,
+                        myItemId: 4078461498,
+                        myColumnValues: `{\"date3\" : {\"date\" : \"${date}\", \"time\": \"${time}:00\"}}`
+                    })
+                })
+            })
+
+
+        })
+
+
+        async function searchUserToEdit() {
+
+                console.log("ESTO ES UNA CHAMBONADA" + identidad)
+                let query =
+                    `query { items_by_column_values (board_id: 4064000118, column_id: "texto", column_value: "${identidad}") { id name  } }`;
+
+
+                let datosM;
+                const mondayData = await fetch("https://api.monday.com/v2", {
+                    method: "post",
+                    headers: {
+                        "Content-Type": "application/json",
+                        Authorization:
+                            "eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOjI0MTI2MTUyNCwidWlkIjo0MDMyMDM0MSwiaWFkIjoiMjAyMy0wMy0wM1QwMTo1MDo0NC4wOTdaIiwicGVyIjoibWU6d3JpdGUiLCJhY3RpZCI6MTU2MjkwNTYsInJnbiI6InVzZTEifQ.RZFifS1K8UzEiwF2Feq4YDrfE6zmZn_SQpJPNOc7ecY",
+                    },
+                    body: JSON.stringify({
+                        query: query,
+                    }),
+                })
+                    .then((res) => res.json())
+                    .then((data) => {
+                        obj = data;
+                    })
+
+                    .then(() => {
+                        datosM = obj;
+
+                        console.log("NUEVOS DATOS" + JSON.stringify(datosM));
+                    });
+                let idEditUser = datosM.data.items_by_column_values[0].id
+                console.log("TEORICAMENTE ESTO SALE" + idEditUser)
+                return idEditUser
+            }
+
+        function queHoraEs() {
+            // get the current date and time in UTC
+            const now = new Date();
+
+            // calculate the number of days until the next Monday
+            const daysUntilMonday = (7 - now.getUTCDay()) % 7;
+
+            // calculate the date of the next Monday
+            const nextMonday = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate() + daysUntilMonday);
+
+            // format the date as an ISO 8601 string in UTC time zone (Zulu time)
+            const nextMondayISO = nextMonday.toISOString();
+
+            console.log("HORAAAAA" + nextMondayISO); // e.g., "2023-03-06T00:00:00.000Z"
+
+            return nextMondayISO
+        }
+
+
     </script>
 </body>
 
